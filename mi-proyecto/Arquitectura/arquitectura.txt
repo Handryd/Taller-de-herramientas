@@ -1,0 +1,33 @@
++-------------------+
+|   Capa de Cliente |
+| (Navegador/Móvil) |
++---------+---------+
+          | (HTTP/HTTPS)
+          v
++---------+---------+
+|   Capa de Presentación |
+| (Servidor Web/API Gateway) |
+|   - Manejo de Solicitudes |
+|   - Autenticación/Autorización |
++---------+---------+
+          | (Llamadas a Servicios)
+          v
++---------+---------+
+|   Capa de Lógica de Negocio |
+| (Servicios/Controladores) |
+|   - Reglas de Negocio |
+|   - Procesamiento de Datos |
++---------+---------+
+          | (Consultas/Actualizaciones)
+          v
++---------+---------+
+|   Capa de Acceso a Datos |
+| (Repositorios) |
+|   - Interacción con DB |
++---------+---------+
+          |
+          v
++-------------------+
+|   Base de Datos   |
+| (PostgreSQL) |
++-------------------+
